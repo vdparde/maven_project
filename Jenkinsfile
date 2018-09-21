@@ -9,8 +9,9 @@ pipeline {
           stages {
 	   stage ('Pull'){
 
- 		git url: 'https://github.com/vdparde/maven_project.git'              
-            	  }
+		    git 'https://github.com/vdparde/maven_project.git'
+            	  
+			}
 
 	   stage ('Build'){
      		steps {
