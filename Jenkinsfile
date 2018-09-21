@@ -4,7 +4,9 @@ pipeline {
              tools {
                    maven 'Apache-Maven-2.2.1'
                   }
-	stages {
+	}
+      
+          stages {
 	   stage ('Pull'){
 
  		git url: 'https://github.com/vdparde/maven_project.git'              
@@ -45,4 +47,4 @@ pipeline {
 
 
 
-}
+
